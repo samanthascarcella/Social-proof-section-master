@@ -1,0 +1,196 @@
+/* ------------- MOBILE VIEW ------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: hsl(30, 14%, 95%);
+}
+
+.container {
+    width: 375px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-position: left top, left bottom;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.card {
+    width: 340px;
+}
+
+.headers {
+    text-align: center;
+}
+
+.header {
+    font-weight: 700;
+    font-size: 40px;
+    color: hsl(300, 43%, 22%);
+
+    padding-top: 80px;
+}
+
+.subheader {
+    font-size: 17px;
+    color: hsl(303, 10%, 53%);
+    line-height: 120%;
+
+    padding: 20px 0;
+}
+
+.ratings {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rating {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+
+    padding: 15px 0;
+    margin: 15px 0;
+}
+
+.rating p {
+    padding-top: 10px;
+}
+
+.reviews {
+    padding: 10px 0 80px 0;
+}
+
+.review {
+    padding: 40px;
+    margin-bottom: 15px;
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+
+    border-radius: 10px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.review-header img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.location {
+    color: hsl(333, 80%, 67%);
+    margin-top: 5px;
+}
+
+.review-comment {
+    line-height: 130%;
+    font-size: 16px;
+}
+
+/* ------------- MOBILE VIEW ------------- */
+
+@media (min-width: 900px) {
+    body {}
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+    }
+
+    .card {
+        display: flex;
+        flex-flow: row wrap;
+
+        width: 1440px;
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 80px;
+    }
+
+    .headers {
+        width: 50%;
+    }
+
+    .header {
+        width: 50%;
+        text-align: left;
+
+        padding: 80px 0 30px 80px;
+        margin: 0;
+    }
+
+    .subheader {
+        width: 80%;
+        text-align: left;
+
+        padding: 0 0 40px 80px;
+        margin: 0;
+    }
+
+    .ratings {
+        width: 50%;
+        padding: 50px 0px 0 0;
+    }
+
+    .rating {
+        width: 80%;
+    }
+
+    .rating2 {
+        margin-left: 30px;
+    }
+
+    .rating3 {
+        margin-left: 60px;
+    }
+
+    .rating p {
+        display: inline;
+        padding-left: 15px;
+    }
+
+    .reviews {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 80px;
+    }
+
+    .review {
+        padding: 40px 30px;
+        margin: 10px;
+        width: 30%;
+    }
+
+    .review2 {
+        margin-top: 40px;
+    }
+
+    .review3 {
+        margin-top: 80px;
+    }
+}
